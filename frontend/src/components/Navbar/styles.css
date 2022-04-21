@@ -28,11 +28,11 @@ header {
     margin: 0 0 0 10px;
 }
 
-a {
+.xbcritic-nav-content a {
     text-decoration: none;
-    color: unset;
+    color: rgb(255, 255, 255);
 }
 
-a:hover {
+.xbcritic-nav-content a:hover {
     color: unset;
 }
