@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import MovieScore from '../MovieScore'
 
 const movie = {
@@ -15,7 +16,9 @@ function MovieCard() {
             <div className="xbcritic-card-bottom-container">
                 <h3>{movie.title}</h3>
                 <MovieScore />
-                <div className="btn btn-dark xbcritic-btn">Avaliar</div>
+                <Link to={`/formulario/${movie.id}`}>
+                    <div className="btn btn-dark xbcritic-btn">Avaliar</div>
+                </Link>
             </div>
         </div>
     )

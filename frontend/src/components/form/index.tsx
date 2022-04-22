@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './styles.css'
 
 function Form() {
@@ -35,7 +36,9 @@ function Form() {
                     </div>
                 </form>
                 <div className="xbcritic-formsx-btn-container">
-                    <button className="btn xbcritic-btn mt-3">Cancelar</button>
+                    <Link to="/">
+                        <button className="btn xbcritic-btn mt-3">Cancelar</button>
+                    </Link>
                 </div>
 
             </div>
