@@ -40,9 +40,7 @@ function Form() {
                         <button className="btn xbcritic-btn mt-3">Cancelar</button>
                     </Link>
                 </div>
-
             </div>
-
         </div>
     )
 }
