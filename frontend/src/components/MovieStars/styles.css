@@ -1,0 +1,7 @@
+.xbcritic-stars-container {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(230, 214, 4);
+
+}

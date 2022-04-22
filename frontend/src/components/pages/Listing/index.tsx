@@ -1,14 +1,13 @@
 import React from 'react'
+import MovieCard from '../../MovieCard'
 import Pagination from '../Pagination'
 
 function Listing() {
     return (
-        <div>
-            <h1>
-                PÁGINA DE LISTAGEM
-            </h1>
+        <>
             <Pagination />
-        </div>
+            <MovieCard />
+        </>
     )
 }
 
