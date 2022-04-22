@@ -30,13 +30,16 @@ function Form() {
                             <option>5</option>
                         </select>
                     </div>
-                    <div className="xbcritc-form-btn-container">
-                        <button type="submit" className="btn btn-primary xbcritic-btn">Salvar</button>
+                    <div className="xbcritic-form-btn-container">
+                        <button type="submit" className="btn xbcritic-btn">Salvar</button>
                     </div>
                 </form>
-                <button type="submit" className="btn btn-primary xbcritic-btn mt-3">Cancelar</button>
+                <div className="xbcritic-formsx-btn-container">
+                    <button className="btn xbcritic-btn mt-3">Cancelar</button>
+                </div>
+
             </div>
-           
+
         </div>
     )
 }

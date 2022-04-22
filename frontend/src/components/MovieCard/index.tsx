@@ -15,7 +15,7 @@ function MovieCard() {
             <div className="xbcritic-card-bottom-container">
                 <h3>{movie.title}</h3>
                 <MovieScore />
-                <div className="btn btn-primary xbcritic-btn">Avaliar</div>
+                <div className="btn btn-dark xbcritic-btn">Avaliar</div>
             </div>
         </div>
     )
