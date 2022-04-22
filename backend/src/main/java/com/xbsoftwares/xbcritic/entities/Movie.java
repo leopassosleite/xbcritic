@@ -1,9 +1,13 @@
 package com.xbsoftwares.xbcritic.entities;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -18,6 +22,9 @@ public class Movie {
 	private Integer count;
 	private String image;
 	private String video;
+	
+	@OneToMany(mappedBy = "id.movie")
+	private Set<Score> scores = new HashSet<>();
 	
 	public Movie() {
 	}
@@ -77,5 +84,9 @@ public class Movie {
 
 	public void setVideo(String video) {
 		this.video = video;
+	}
+
+	public Set<Score> getScores() {
+		return scores;
 	}
 }
