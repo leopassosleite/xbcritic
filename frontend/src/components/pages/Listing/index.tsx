@@ -1,8 +1,16 @@
+import axios from 'axios'
 import React from 'react'
-import MovieCard from '../../MovieCard'
-import Pagination from '../Pagination'
+import MovieCard from "components/MovieCard"
+import Pagination from "components/pages/Pagination"
+import { BASE_URL} from "services/requests"
 
 function Listing() {
+
+    axios.get(`${BASE_URL}/movies?size=12&page=0`)
+    .then(response => {
+        console.log(response.data)
+    });
+
     return (
         <>
             <Pagination />
