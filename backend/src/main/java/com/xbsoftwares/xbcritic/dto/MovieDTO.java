@@ -15,7 +15,6 @@ public class MovieDTO {
 	}
 
 	public MovieDTO(Long id, String title, Double score, Integer count, String image, String video) {
-		super();
 		this.id = id;
 		this.title = title;
 		this.score = score;
