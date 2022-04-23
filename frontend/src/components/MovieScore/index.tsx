@@ -2,14 +2,17 @@ import React from 'react'
 import './styles.css'
 import MovieStars from '../MovieStars'
 
-const score = 3.5;
-const count = 13;
+type Props = {
+    score: number;
+    count: number;
+}
 
-function MovieScore() {
+function MovieScore({ score, count} : Props) {
+
     return (
         <div className="xbcritic-score-container">
             <p className="xbcritic-score-value">{score > 0 ? score.toFixed(1) : '-'}</p>
-            <MovieStars />
+            <MovieStars score={score}/>
             <p className="xbcritic-score-count">{count} avaliações</p>
         </div>
     )

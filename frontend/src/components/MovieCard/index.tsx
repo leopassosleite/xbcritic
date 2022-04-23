@@ -13,7 +13,7 @@ function MovieCard( { movie } : Props) {
             <img className="xbcritic-movie-card-image" src={movie.image} alt={movie.title} />
             <div className="xbcritic-card-bottom-container">
                 <h3>{movie.title}</h3>
-                <MovieScore />
+                <MovieScore count={movie.count} score={movie.score}/>
                 <Link to={`/formulario/${movie.id}`}>
                     <div className="btn btn-dark xbcritic-btn">Avaliar</div>
                 </Link>
